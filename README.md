@@ -34,7 +34,7 @@ As a freelance web developer, I want to generate a simple logo for my projects s
 Your application should use [Jest](https://www.npmjs.com/package/jest) for running the unit tests and [Inquirer](https://www.npmjs.com/package/inquirer/v/8.2.4) for collecting input from the user. The application will be invoked by using the command: `node index.js`.
 
 ## Credits
-[Jonathan Fadera](https://github.com/JonathanFadera) [Week_10-oop](https://ucb.bootcampcontent.com/UCB-Coding-Bootcamp/UCB-VIRT-FSF-PT-01-2023-U-LOLC/-/tree/main/Week_10-OOP/01-Activities)
+[Jonathan Fadera](https://github.com/JonathanFadera), [Week_10-oop](https://ucb.bootcampcontent.com/UCB-Coding-Bootcamp/UCB-VIRT-FSF-PT-01-2023-U-LOLC/-/tree/main/Week_10-OOP/01-Activities)
 
 ## Questions
 If there are any questions, feel free to contact my email at: ericsonhnc@gmail.com
