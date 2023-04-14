@@ -1,7 +1,7 @@
-const inquirer = ("inquirer");
-const { Circle, Square, Triangle } = require("./lib/shapes");
-const { writeFile } = require("fs/promises");
+const inquirer = require("inquirer");
 const SVG = require("./lib/SVG");
+const {Circle, Square, Triangle} = require("./lib/Shapes");
+const { writeFile } = require("fs").promises;
 
 const questions = [
     {
@@ -32,27 +32,29 @@ const questions = [
         message: "Enter a color for the shape (keyword or hexadecimal number):",
     },
 ];
-inquirer.prompt(questions).then(({ text, shapeType, textColor, shapeColor }) => {
-    let shape;
-    switch (shapeType) {
-        case "Circle":
-            shape = new Circle(100);
-            break;
-        case "Square":
-            shape = new Square(100);
-            break;
-        case "Triangle":
-            shape = new Triangle(100);
-            break;
-    }
-    shape.setColor(shapeColor);
-    const svg = new SVG()
-    svg.setText(text, textColor)
-    svg.setShape(shape)
-    return writeFile("./output/output.svg", svg.render())
-}).then(() => {
-    console.log("Your SVG file has been saved!");
-}).catch(err => {
-    console.log(err);
-});
 
+inquirer.prompt(questions).then(({text,textColor, shapeType, shapeColor}) => {
+    let shape;
+  
+    switch (shapeType) {
+      case 'Triangle':
+        shape = new Triangle();
+        break;
+      case 'Circle':
+        shape = new Circle();
+        break;
+      default:
+        shape = new Square();
+        break;
+    
+    }
+  shape.setColor(shapeColor)
+  const svg = new SVG()
+  svg.setText(text, textColor)
+  svg.setShape(shape)
+  return writeFile("./examples/logo.svg", svg.render())
+  
+  })
+  .then(() => console.log("Generated logo.svg"))
+  
+  .catch(err => console.log(err));  
