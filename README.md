@@ -27,6 +27,8 @@ Each shape class should be tested for a `render()` method that returns a string 
 ## Usage
 As a freelance web developer, I want to generate a simple logo for my projects so that I dont have to pay a graphic designer.
 
+[Link to the Demo]()
+
 ## License
     This application is covered by the MIT license.
 
