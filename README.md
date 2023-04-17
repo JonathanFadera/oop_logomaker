@@ -9,9 +9,12 @@ Build a Node.js command-line application that takes in user input to generate a 
 
 ## Table of Contents 
 
+- [OOP\_Logo\_Maker](#oop_logo_maker)
+  - [Description](#description)
   - [Table of Contents](#table-of-contents)
   - [Installation](#installation)
   - [Usage](#usage)
+  - [Mock-up](#mock-up)
   - [License](#license)
   - [Tests](#tests)
   - [Credits](#credits)
@@ -28,6 +31,12 @@ Each shape class should be tested for a `render()` method that returns a string 
 As a freelance web developer, I want to generate a simple logo for my projects so that I dont have to pay a graphic designer.
 
 [Link to the Demo](https://watch.screencastify.com/v/8R2pxYHS4UN8tkGu44PS)
+
+## Mock-up
+
+The following image shows a mock-up of the generated SVG given the following input entered by the user: `EYE` for the text, `red` for the text color, `triangle` from the list of shapes, and `black` for the shape color. Note that this is just an image of the output SVG and not the SVG file itself:
+
+![Image showing a black circle with red text that reads "EYE.".](examples/Triangle%20SVG.svg)
 
 ## License
     This application is covered by the MIT license.
