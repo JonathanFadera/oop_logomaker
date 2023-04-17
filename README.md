@@ -9,8 +9,6 @@ Build a Node.js command-line application that takes in user input to generate a 
 
 ## Table of Contents 
 
-- [OOP\_Logo\_Maker](#oop_logo_maker)
-  - [Description](#description)
   - [Table of Contents](#table-of-contents)
   - [Installation](#installation)
   - [Usage](#usage)
