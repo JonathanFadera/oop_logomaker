@@ -1,4 +1,4 @@
-// 1. import the inquirer module
+// import the inquirer module
 const inquirer = require("inquirer");
 const SVG = require("./lib/SVG");
 // create path for each shape class
